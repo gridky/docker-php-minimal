@@ -2,6 +2,8 @@ FROM php:7.4-cli
 
 RUN apt-get update --fix-missing \
     && apt-get install -y \
+        git \
+        zip \
         curl \
         ca-certificates \
     && rm -rf /var/lib/apt/lists/*

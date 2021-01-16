@@ -2,6 +2,8 @@ FROM php:8.0-cli
 
 RUN apt-get update --fix-missing \
     && apt-get install -y \
+        git \
+        zip \
         curl \
         ca-certificates \
     && rm -rf /var/lib/apt/lists/*
