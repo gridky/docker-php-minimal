@@ -19,7 +19,8 @@ RUN rm -rf /var/lib/apt/lists/*
 
 # Install PHP Extensions
 RUN docker-php-ext-install \
-    zip
+    zip \
+    pdo_mysql
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer -o composer-setup.php \
