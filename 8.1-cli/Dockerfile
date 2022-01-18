@@ -11,9 +11,10 @@ RUN apt-get install -y \
         git \
         zip \
         curl \
+        npm \
         libzip-dev \
-        ca-certificates \
         libpng++-dev \
+        ca-certificates \
         default-mysql-client
 
 # Install pecl packages
